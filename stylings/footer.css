@@ -1,0 +1,55 @@
+@import url('font.css');
+
+/* Footer */
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section a {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

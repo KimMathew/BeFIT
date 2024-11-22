@@ -1,0 +1,97 @@
+@import url('font.css');
+
+/* Navigation */
+nav {
+    height: 72px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-container {
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    width: 250px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-muted);
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.button-ghost {
+    background: transparent;
+    color: var(--color-white);;
+    border: none;
+}
+
+.button-primary {
+    background: var(--color-white);
+    color: var(--background);
+    border: none;
+}
+
+.button-primary:hover {
+    opacity: 0.8;
+}
