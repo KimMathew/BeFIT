@@ -7,7 +7,6 @@ nav {
 }
 
 .nav-container {
-    padding: 0 20px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -24,12 +23,12 @@ nav {
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .nav-links a {
@@ -88,7 +87,7 @@ nav {
 
 .button-primary {
     background: var(--color-white);
-    color: var(--background);
+    color: var(--color-black);
     border: none;
 }
 

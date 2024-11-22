@@ -1,4 +1,4 @@
-@import url('font.css');
+@import url('root.css');
 
 /* Footer */
 footer {
@@ -19,7 +19,7 @@ footer {
 
 .footer-section p,
 .footer-section a {
-    color: var(--text-muted);
+    color: var(--color-grey);
     font-size: 0.875rem;
     text-decoration: none;
 }
