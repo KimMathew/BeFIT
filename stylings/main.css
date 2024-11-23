@@ -1,20 +1,5 @@
 @import url('root.css');
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    line-height: 1.5;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 /* Hero Section */
 .hero {
     padding: 3rem 0;
@@ -107,39 +92,12 @@ body {
 }
 
 #getstartedBtn {
-    background-color: var(--color-white);
-    padding: 10px 20px;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--color-black);
     font-size: 1.2rem;
-    border-radius: 5px;
-}
-
-#getstartedBtn:hover {
-    opacity: 0.9;
 }
 
 .feature-program {
     padding: 3rem 0;
     background-color: #58a4b0;
-    
-}
-
-.feature-program-container, .feedback-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-#container-label {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
 }
 
 .item {
@@ -222,10 +180,20 @@ body {
 }
 
 .cta-container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    /* background-color: red; */
+}
+
+.cta-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.cta-label {
+    font-size: 1.3rem;
+}
+
+#ctaBtn {
+    margin-top: 0.5rem;
+    text-align: center;
 }
 

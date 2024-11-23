@@ -1,0 +1,235 @@
+@import url('root.css');
+
+.dashboard-container {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.item {
+    background-color: #2d2d2d;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.row-flex {
+    gap: 20px;
+}
+
+.dashboard-item {
+    flex: 1
+}
+
+.column-flex {
+    gap: 0.5rem;
+}
+
+.info-header{
+    align-items: center;
+}
+
+.info-label {
+    color: var(--color-grey);
+}
+
+.info-value {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.program-tabs {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.tabs {
+    background-color: #2d2d2d;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.tab {
+    background-color: transparent;
+    color: var(--color-grey);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.tab-item-container {
+    gap: 20px;
+}
+
+.tab-item {
+    flex: 1;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+#workoutBtn {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.item-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.item-details {
+    color: var(--color-grey);
+}
+
+#progressContainer {
+    margin-top: 1.5rem;
+    width: 100%; 
+    background-color: #e0e0e0; 
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+#progressBar {
+    width: 80%; 
+    height: 20px; 
+    background-color: #4caf50;
+}
+
+.tab-subheading-container {
+    align-items: center;
+}
+
+.tab-subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.log-workout-btn {
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 1.5rem; 
+    background-color: #2d2d2d; 
+    color: #fff; 
+    font-size: 1rem; 
+    font-weight: 500; 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.log-workout-btn i {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 1rem; 
+    line-height: 0; 
+}
+
+.log-workout-btn:hover {
+    background-color: #333; 
+}
+
+.workout-item {
+    margin-top: 1rem;
+}
+
+.recent-workout-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.recent-workout-date {
+    color: var(--color-grey);
+}
+
+.view-details {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+.nutrition-content {
+    margin-top: 0.5rem;
+}
+
+.nutritionProgress {
+    margin-top: 0.5rem;
+    width: 100%; 
+    background-color: #e0e0e0; 
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+.nutritionProgressBar {
+    height: 10px; 
+}
+
+#protein {
+    width: 80%; 
+    background-color: #4caf50;
+}
+
+#carbs {
+    width: 80%; 
+    background-color: #3b82f6;
+}
+
+#fat {
+    width: 81.25%; 
+    background-color: #eab308;
+}
+
+#water-intake {
+    flex: 1;
+    display: flex; 
+    align-items: center;
+    
+}
+
+#percentage-circle {
+    outline: none;
+    width: 8rem; 
+    height: 8rem; 
+    border: 0.5rem solid #3b82f6; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-right: 1rem;
+}
+
+#percentage-label {
+    font-size: 2rem; 
+    font-weight: bold;
+}
+
+#intake-ratio {
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+#goal {
+    color: var(--color-grey);
+}
+

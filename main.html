@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "/stylings/navbar.css">
     <link rel = "stylesheet" href = "/stylings/footer.css">
-    <link rel = "stylesheet" href = "/stylings/style.css">
+    <link rel = "stylesheet" href = "/stylings/main.css">
     <title>BeFIT - Reach New Heights in Fitness</title>
 </head>
 <body>
@@ -14,11 +14,11 @@
             <div class="nav-left">
                 <a href="main.html" class="logo">BeFIT</a>
                 <div class="nav-links">
-                    <a href="#">Programs</a>
-                    <a href="#">Dashboard</a>
-                    <a href="#">Community</a>
-                    <a href="#">Nutrition Guidance</a>
-                    <a href="#">About us</a>
+                    <a href="pages/programs.html">Programs</a>
+                    <a href="pages/dashboard.html">Dashboard</a>
+                    <a href="pages/community.html">Community</a>
+                    <a href="pages/nutrition-guidance.html">Nutrition Guidance</a>
+                    <a href="pages/about-us.html">About us</a>
                 </div>
             </div>
             <div class="nav-right">
@@ -49,7 +49,7 @@
                     <p class="hero-text">
                         Join us to unlock tailored workouts, track your progress, and connect with fellow fitness enthusiasts. It's time to break barriers and reach new heights together!
                     </p>
-                    <a href="#" id="getstartedBtn">Get Started</a>
+                    <a href="/pages/programs.html" id="getstartedBtn" class="btn">Get Started</a>
                 </div>
                 <div class="feature-grid">
                     <div class="feature-card">
@@ -78,9 +78,9 @@
 
         <!-- Feature Programs -->
         <div class="feature-program">
-            <div class="container feature-program-container">
+            <div class="container feature-program-container column-flex">
                 <div id="container-label">Feature Programs</div>
-                <div class="row">
+                <div class="row-flex">
                     <div class="feature-program-item item">
                         <div id="item-title">Weight Loss Journey</div>
                         <p id="item-label">Burn calories, eat smart, and lose weight sustainably with expert guidance and community support.</p>
@@ -102,9 +102,9 @@
 
         <!-- Feedbacks -->
          <div class="feedback">
-            <div class="container feedback-container">
+            <div class="container feedback-container column-flex">
                 <div id="container-label">What Our Members Say</div>
-                <div class="row">
+                <div class="row-flex">
                     <div class="feedback-item item">
                         <p id="feedback-label">"BeFIT has transformed my fitness journey. The personalized workouts and supportive community have been game-changers!"</p>
                         <div class="user-info">
@@ -141,44 +141,50 @@
 
         <!-- Call to Action -->
         <div class="cta">
-            <div class="container cta-container">
-                <div id="container-label">Ready to Start Your Fitness Journey?</div>
-                <div>Join BeFIT today and unlock your full potential!</div>
+            <div class="container cta-container column-flex">
+                <div class="cta-title">Ready to Start Your Fitness Journey?</div>
+                <div class="cta-label">Join BeFIT today and unlock your full potential!</div>
+                <a href="/pages/programs.html" id="ctaBtn" class="btn">Get Started Now</a>
             </div>
         </div>
     </main>
 
     <footer>
         <div class="container footer-container">
-            <div class="footer-section">
-                <h3>BeFIT</h3>
-                <p>Empowering your fitness journey with personalized workouts and expert guidance.</p>
+            <div class="row-flex">
+                <div class="footer-section">
+                    <h3>BeFIT</h3>
+                    <p>Empowering your fitness journey with personalized workouts and expert guidance.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/programs.html">Programs</a></li>
+                        <li><a href="pages/dashboard.html">Dashboard</a></li>
+                        <li><a href="pages/community.html">Community</a></li>
+                        <li><a href="pages/nutrition-guidance.html">Nutrition Guidance</a></li>
+                        <li><a href="pages/about-us.html">About us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="/programs">Programs</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/about">About Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Connect</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Legal</h3>
-                <ul class="footer-links">
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/terms">Terms of Service</a></li>
-                    <li><a href="/cookies">Cookie Policy</a></li>
-                </ul>
+            <div class="footer-bottom">
+                &copy; 2024 BeFIT. All rights reserved.
             </div>
         </div>
     </footer>

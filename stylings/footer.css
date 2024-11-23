@@ -7,14 +7,23 @@ footer {
 }
 
 .footer-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.row-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-section h3 {
     font-size: 1rem;
     margin-bottom: 1rem;
+}
+
+.footer-section {
+    width: 22%;
 }
 
 .footer-section p,
@@ -30,6 +39,12 @@ footer {
 
 .footer-links li {
     margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    margin-top: 1rem;
+    color: var(--color-grey);
+    text-align: center;
 }
 
 @media (max-width: 768px) {

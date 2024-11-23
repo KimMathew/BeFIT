@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "/stylings/navbar.css">
+    <link rel = "stylesheet" href = "/stylings/footer.css">
+    <link rel = "stylesheet" href = "/stylings/programs.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>BeFIT - Programs</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-left">
+                <a href="../main.html" class="logo">BeFIT</a>
+                <div class="nav-links">
+                    <a href="programs.html">Programs</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="community.html">Community</a>
+                    <a href="nutrition-guidance.html">Nutrition Guidance</a>
+                    <a href="about-us.html">About us</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <span class="search-icon">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </span>
+                    <input type="search" placeholder="Search..." class="search-input">
+                </div>
+                <button class="button button-ghost">Log In</button>
+                <button class="button button-primary">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container program-header-container">
+            <h1>Fitness Programs</h1>
+            <p>Discover the perfect fitness program to achieve your goals</p>
+            <div class="search-bar">
+                <div class="search-program-container">
+                    <span class="header-search-icon">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </span>
+                    <input type="search" placeholder="Search programs..." class="search">
+                </div>
+                <button class="filter-btn">
+                    <img src="/assets/filter.png" alt="Filter Icon" class="filter-icon" />
+                    Filter
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="programs">
+            <div class="container program-container">
+                <div class="program-tabs">
+                    <div class="tabs">
+                        <button class="tab active" data-category="all">All Programs</button>
+                        <button class="tab" data-category="strength">Strength</button>
+                        <button class="tab" data-category="cardio">Cardio</button>
+                        <button class="tab" data-category="flexibility">Flexibility</button>
+                    </div>
+                </div>
+                <div class="grid grid-3" id="programs-grid">
+                    <!-- Program cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <div class="cta">
+            <div class="container cta-container column-flex">
+                <div class="cta-title">Find Your Perfect Program</div>
+                <div class="cta-label">Not sure which program is right for you? Take our fitness assessment!</div>
+                <a href="#" id="ctaBtn" class="btn">Start Assessment</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="row-flex">
+                <div class="footer-section">
+                    <h3>BeFIT</h3>
+                    <p>Empowering your fitness journey with personalized workouts and expert guidance.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="nutrition-guidance.html">Nutrition Guidance</a></li>
+                        <li><a href="about-us.html">About us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 BeFIT. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/programs.js"></script>
+</body>
+</html>

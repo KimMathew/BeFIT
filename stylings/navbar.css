@@ -63,6 +63,8 @@ nav {
 
 .search-icon {
     position: absolute;
+    display: flex;
+    align-items: center;
     left: 0.75rem;
     top: 50%;
     transform: translateY(-50%);
