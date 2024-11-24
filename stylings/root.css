@@ -117,3 +117,31 @@ header p {
 .grid-3 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* CTA */
+.cta {
+    padding: 3rem 0;
+    background-color: #58a4b0;
+}
+
+.cta-container {
+    align-items: center;
+}
+
+.cta-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.cta-label {
+    font-size: 1.3rem;
+}
+
+#ctaBtn {
+    margin-top: 0.5rem;
+    text-align: center;
+}

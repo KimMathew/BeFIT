@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "/stylings/navbar.css">
+    <link rel = "stylesheet" href = "/stylings/footer.css">
+    <link rel = "stylesheet" href = "/stylings/nutrition-guidance.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>BeFIT - Nutrition Guidance</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-left">
+                <a href="../main.html" class="logo">BeFIT</a>
+                <div class="nav-links">
+                    <a href="programs.html">Programs</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="community.html">Community</a>
+                    <a href="nutrition-guidance.html">Nutrition Guidance</a>
+                    <a href="about-us.html">About us</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <span class="search-icon">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </span>
+                    <input type="search" placeholder="Search..." class="search-input">
+                </div>
+                <button class="button button-ghost">Log In</button>
+                <button class="button button-primary">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container header-container">
+            <h1>Nutrition Guidance</h1>
+            <p>Fuel your body for optimal performance and health</p>
+            <div class="search-bar">
+                <div class="header-search-container">
+                    <span class="header-search-icon">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </span>
+                    <input type="search" placeholder="Search nutrition topics..." class="search">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="tab-switch-container container column-flex">
+            <!-- Switching Tabs -->
+            <div class="program-tabs">
+                <div class="tabs">
+                    <button class="tab active" data-tab="overview">Overview</button>
+                    <button class="tab" data-tab="meal-planning">Meal Planning</button>
+                    <button class="tab" data-tab="recipes">Recipes</button>
+                </div>
+            </div>
+
+            <!-- Overview Tab -->
+            <div id="overview" class="tab-content active">
+                <div class="grid-2 grid">
+                    <div id="no-color" class="overview-item item">
+                        <h2>Nutrition Basics</h2>
+                        <p class="item-label">Understanding the fundamentals of nutrition is crucial for achieving your fitness goals. Learn about macronutrients, micronutrients, and how to create a balanced diet.</p>
+                        <a href="#" id="learnBtn" class="btn">Learn More</a>
+                    </div>
+                    <div class="overview-item item add-gap">
+                        <div class="item-title">Quick Nutrition Tips</div>
+                        <span>
+                            <i id="apple" class="fas fa-apple-alt fa-lg"></i> Eat a variety of colorful fruits and vegetables
+                        </span>
+                        <span>
+                            <i id="tint" class="fas fa-tint fa-lg"></i> Stay hydrated throughout the day
+                        </span>
+                        <span>
+                            <i class="fas fa-utensils fa-lg"></i> Practice portion control
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meal Planning Tab -->
+            <div id="meal-planning" class="tab-content">
+                <div class="column-flex">
+                    <h2>Meal Planning</h2>
+                    <div class="grid-2 grid">
+                        <div class="meal-item item">
+                            <div class="item-title">Beginner Meal Plan</div>
+                            <div class="item-label">A beginner-level meal plan designed to support your fitness goals.</div>
+                            <ul>
+                                <li>Customized macronutrient ratios</li>
+                                <li>3 meals per day</li>
+                                <li>1 snack option</li>
+                                <li>Shopping list included</li>
+                            </ul>
+                            <a href="#" class="mealBtn btn">View Plan</a>
+                        </div>
+                        <div class="meal-item item">
+                            <div class="item-title">Intermediate Meal Plan</div>
+                            <div class="item-label">A intermediate-level meal plan designed to support your fitness goals.</div>
+                            <ul>
+                                <li>Customized macronutrient ratios</li>
+                                <li>4 meals per day</li>
+                                <li>2 snack option</li>
+                                <li>Shopping list included</li>
+                            </ul>
+                            <a href="#" class="mealBtn btn">View Plan</a>
+                        </div>
+                        <div class="meal-item item">
+                            <div class="item-title">Advanced Meal Plan</div>
+                            <div class="item-label">A advanced-level meal plan designed to support your fitness goals.</div>
+                            <ul>
+                                <li>Customized macronutrient ratios</li>
+                                <li>5 meals per day</li>
+                                <li>3 snack option</li>
+                                <li>Shopping list included</li>
+                            </ul>
+                            <a href="#" class="mealBtn btn">View Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipes Tab -->
+            <div id="recipes" class="tab-content">
+                <div class="column-flex">
+                    <h2>Healthy Recipes</h2>
+                    <div class="grid-3 grid" id="recipe-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nutrition Resources -->
+        <section class="resources">
+            <div class="resources-container container column-flex">
+                <div id="container-label">Nutrition Resources</div>
+                <div class="grid grid-3">
+                    <div class="resources-item item">
+                        <div class="item-title">Nutrition E-Books</div>
+                        <div class="item-label">Comprehensive guides covering various essential nutrition topics.</div>
+                        <a href="#" class="resourceBtn btn">Access Resource</a>
+                    </div>
+                    <div class="resources-item item">
+                        <div class="item-title">Healthy Shopping Lists</div>
+                        <div class="item-label">Personalized grocery lists to streamline your shopping experience.</div>
+                        <a href="#" class="resourceBtn btn">Access Resource</a>
+                    </div>
+                    <div class="resources-item item">
+                        <div class="item-title">Video Tutorials</div>
+                        <div class="item-label">Master cooking techniques and effective meal prep strategies.</div>
+                        <a href="#" class="resourceBtn btn">Access Resource</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <div class="cta">
+            <div class="container cta-container column-flex">
+                <div class="cta-title">Need Personalized Nutrition Advice?</div>
+                <div class="cta-label">Schedule a consultation with one of our certified nutritionists</div>
+                <a href="#" id="ctaBtn" class="btn">Book a Consulation</a>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="row-flex">
+                <div class="footer-section">
+                    <h3>BeFIT</h3>
+                    <p>Empowering your fitness journey with personalized workouts and expert guidance.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="nutrition-guidance.html">Nutrition Guidance</a></li>
+                        <li><a href="about-us.html">About us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 BeFIT. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="/scripts/tab-switch.js"></script>
+    <script src="/scripts/recipes.js"></script>
+</body>
+</html>

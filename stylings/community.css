@@ -1,5 +1,6 @@
 @import url('root.css');
 
+/* Sections */
 .hot-topic, .recent-discussion, .community-highlights {
     padding: 3rem 0;
 }
@@ -155,27 +156,4 @@
     color: #f39c12;
 }
 
-/* CTA */
-.cta {
-    padding: 3rem 0;
-    background-color: #58a4b0;
-}
-
-.cta-container {
-    align-items: center;
-}
-
-.cta-title {
-    font-size: 2.3rem;
-    font-weight: 700;
-}
-
-.cta-label {
-    font-size: 1.3rem;
-}
-
-#ctaBtn {
-    margin-top: 0.5rem;
-    text-align: center;
-}
 
