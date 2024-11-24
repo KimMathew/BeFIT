@@ -105,7 +105,6 @@
     flex-direction: column;
     border-radius: 1rem;
     padding: 1.5rem;
-    width: 32%;
     gap: 1rem;
 }
 
@@ -113,12 +112,12 @@
     background-color: #1b1b1b;
 }
 
-#item-title {
+.item-title {
     font-size: 1.3rem;
     font-weight: 600;
 }
 
-#item-label {
+.item-label {
     color: var(--color-grey);
 }
 

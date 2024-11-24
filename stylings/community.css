@@ -1,0 +1,181 @@
+@import url('root.css');
+
+.hot-topic, .recent-discussion, .community-highlights {
+    padding: 3rem 0;
+}
+
+.hot-topic-item {
+    background-color: #2d2d2d;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hot-topic-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.hot-topic-image {
+    flex: 1;
+}
+
+.hot-topic-content p {
+    color: var(--color-grey);
+}
+
+.hot-topic-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.discussion-meta {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--color-grey);
+    font-size: 0.875rem;
+}
+
+.discussion-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.item {
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+/* For JavaScript */
+.card {
+    background-color: #1b1b1b;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: var(--color-grey);
+}
+
+.viewBtn {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.recent-discussion {
+    background-color: #58a4b0;
+}
+
+.recent-discussion-row {
+    display: flex;
+    gap: 20px
+}
+
+.recent-discussion-content {
+    flex: 1;
+}
+
+.between {
+    margin-top: 0.5rem;
+    justify-content: space-between;
+}
+
+.highlights-item {
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.item-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.item-label {
+    color: var(--color-grey);
+}
+
+.highlightBtn {
+    text-align: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+  
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-color: #cfcfcf; /* Placeholder color */
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.contributor {
+    width: 50px;
+    height: 50px;
+}
+  
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+  
+.user-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.small-details {
+    color: var(--color-grey);
+    font-size: 0.9rem;
+}
+
+.contributors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contributors i {
+    color: #f39c12;
+}
+
+/* CTA */
+.cta {
+    padding: 3rem 0;
+    background-color: #58a4b0;
+}
+
+.cta-container {
+    align-items: center;
+}
+
+.cta-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.cta-label {
+    font-size: 1.3rem;
+}
+
+#ctaBtn {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
