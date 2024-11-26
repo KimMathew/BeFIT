@@ -28,17 +28,18 @@ nav {
 
 .nav-links {
     display: flex;
-    gap: 1.2rem;
+    gap: 2rem;
 }
 
 .nav-links a {
     color: var(--color-white);
     text-decoration: none;
     font-size: 1rem;
+    transition: all 0.2s;
 }
 
 .nav-links a:hover {
-    opacity: 0.8;
+    color: var(--color-accent);
 }
 
 .nav-right {

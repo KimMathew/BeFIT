@@ -47,6 +47,7 @@
     overflow: hidden;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--color-white);
 }
 
 .feature-card:hover {
@@ -97,7 +98,9 @@
 
 .feature-program {
     padding: 3rem 0;
-    background-color: #58a4b0;
+    background-image: url('/assets/gym.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .item {
@@ -109,7 +112,15 @@
 }
 
 .feature-program-item {
-    background-color: #1b1b1b;
+    background-color: rgba(27, 27, 27, 0.85);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-program-item:hover {
+    background-color: var(--color-primary); 
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .item-title {
@@ -134,10 +145,18 @@
 
 .feedback {
     padding: 3rem 0;
+    background-image: url('/assets/concrete-wall.png');
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.7);
 }
 
 .feedback-item {
-    background-color: #58a4b0;
+    background-color: var(--color-accent);
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-item:hover {
+    transform: scale(1.05);
 }
 
 #feedback-label {
@@ -156,6 +175,22 @@
     border-radius: 50%;
     margin-right: 15px;
 }
+
+.pfp-cover {
+    background-size: cover;
+}
+
+#pfp1 {
+    background-image: url('/assets/pfp1.jpg'); 
+}
+
+#pfp2 {
+    background-image: url('/assets/pfp2.jpg');
+}
+
+#pfp3 {
+    background-image: url('/assets/pfp3.jpg');
+}
   
 .user-details {
     display: flex;
@@ -172,4 +207,5 @@
     color: #fff; /* Subdued color */
     margin: 0;
 }
+
 

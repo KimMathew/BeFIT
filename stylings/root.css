@@ -3,10 +3,12 @@
 
 :root {
     --color-primary: #1b1b1b;
+    --color-secondary: #2d2d2d;
     --color-white: #fff;
     --color-black: #000;
     --color-muted: #94a3b8;
     --color-grey: #b7b7b7;
+    --color-accent: #58a4b0;
 }
 
 * {
@@ -40,10 +42,12 @@ body {
     color: var(--color-black);
     background-color: var(--color-white);
     font-weight: 500;
+    transition: all 0.3s;
 }
 
 .btn:hover {
-    opacity: 0.9;
+    background-color: var(--color-accent);
+    color: white;
 }
 
 .column-flex {
@@ -60,7 +64,7 @@ body {
 /* Reusable Header Styling */
 header {
     padding: 3rem 0;
-    background-color: #58a4b0;
+    background-color: var(--color-accent);
 }
 
 header h1 {
@@ -125,7 +129,7 @@ header p {
 /* CTA */
 .cta {
     padding: 3rem 0;
-    background-color: #58a4b0;
+    background: linear-gradient(to right, var(--color-accent), #a9bcd0);
 }
 
 .cta-container {

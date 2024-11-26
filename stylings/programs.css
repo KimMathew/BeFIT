@@ -1,5 +1,29 @@
 @import url('root.css');
 
+header {
+    position: relative;
+    background-image: url('/assets/programs.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 34%;
+}
+
+header::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35); 
+    z-index: 1; /* Ensures overlay is above the image but below the content */
+}
+
+header > * {
+    position: relative;
+    z-index: 2; /* Ensures content (like text) appears above the overlay */
+}
+
 .filter-btn {
     padding: 7px 15px;
     border-radius: 5px;
@@ -12,6 +36,7 @@
     font-weight: 500;
     border: none;
     background-color: var(--color-white);
+    cursor: pointer;
 }
 
 .filter-icon {
@@ -20,6 +45,11 @@
 }
 
 /* Programs */
+.programs {
+    background-image: url('/assets/concrete-wall.png');
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.7);
+}
+
 .program-container {
     padding: 3rem 0;
 }
@@ -45,6 +75,11 @@
     border-radius: 0.25rem;
     font-size: 1rem;
     font-weight: 500;
+    transition: all 0.5s;
+}
+
+.tab:hover {
+    background-color: #3f3f3f;
 }
 
 .tab.active {
@@ -52,18 +87,45 @@
     color: var(--color-white);
 }
 
-
-
 .item {
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
     padding: 1.5rem;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+
+.moreBtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-white);
+    padding: 10px 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: auto; /* This pushes the button to the bottom of the flex container */
+}
+
+.program-card {
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    transition: transform 0.3s;
+}
+
+.program-card:hover {
+    background-color: #363636;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 #item-title {
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     font-size: 1.3rem;
     font-weight: 600;
 }
@@ -87,7 +149,7 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 1rem;
     font-size: 0.9em;
     color: var(--color-grey);
     margin-bottom: 0.5rem;
@@ -105,16 +167,5 @@
 
 .far {
     color: #f39c12;
-}
-
-#moreBtn {
-    text-align: center;
-    background-color: var(--color-white);
-    padding: 10px 20px;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--color-black);
-    font-size: 1rem;
-    border-radius: 5px;
 }
 
