@@ -37,154 +37,156 @@
         </div>
     </nav>
 
-    <main class="container dashboard-container">
-        <!-- Main Info -->
-        <div id="container-label">Welcome back, User!</div>
-        <div class="row-flex">
-            <div class="dashboard-item item column-flex">
-                <div class="info-header row-flex">
-                    <div class="info-label">Workouts Completed</div>
-                    <i class="fas fa-dumbbell"></i>
+    <main>
+        <div class="container dashboard-container">
+            <!-- Main Info -->
+            <div id="container-label">Welcome back, User!</div>
+            <div class="row-flex">
+                <div class="dashboard-item item column-flex">
+                    <div class="info-header row-flex">
+                        <div class="info-label">Workouts Completed</div>
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="info-value">12</div>
                 </div>
-                <div class="info-value">12</div>
-            </div>
-            <div class="dashboard-item item column-flex">
-                <div class="info-header row-flex">
-                    <div class="info-label">Calories Burned</div>
-                    <i class="fas fa-chart-line"></i>
+                <div class="dashboard-item item column-flex">
+                    <div class="info-header row-flex">
+                        <div class="info-label">Calories Burned</div>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="info-value">3,500</div>
                 </div>
-                <div class="info-value">3,500</div>
-            </div>
-            <div class="dashboard-item item column-flex">
-                <div class="info-header row-flex">
-                    <div class="info-label">Active Days</div>
-                    <i class="fas fa-calendar-alt"></i>
+                <div class="dashboard-item item column-flex">
+                    <div class="info-header row-flex">
+                        <div class="info-label">Active Days</div>
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="info-value">18</div>
                 </div>
-                <div class="info-value">18</div>
-            </div>
-            <div class="dashboard-item item column-flex">
-                <div class="info-header row-flex">
-                    <div class="info-label">Nutrition Score</div>
-                    <i class="fas fa-chart-line"></i>
+                <div class="dashboard-item item column-flex">
+                    <div class="info-header row-flex">
+                        <div class="info-label">Nutrition Score</div>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="info-value">85%</div>
                 </div>
-                <div class="info-value">85%</div>
             </div>
-        </div>
 
-        <!-- Switching Tabs -->
-        <div class="program-tabs">
-            <div class="tabs">
-                <button class="tab active" data-tab="overview">Overview</button>
-                <button class="tab" data-tab="workouts">Workouts</button>
-                <button class="tab" data-tab="nutrition">Nutrition</button>
-            </div>
-        </div>
-
-        <!-- Overview Tab -->
-        <div id="overview" class="tab-content active">
-            <div class="overview-content">
-                <div class="tab-item-container row-flex">
-                    <div class="tab-item item column-flex">
-                        <div class="item-title">Today's Workout</div>
-                        <div class="item-details">Upper Body Strength - 45 min</div>
-                        <a href="#" id="workoutBtn" class="btn">Start Workout</a>
-                    </div>
-                    <div class="tab-item item column-flex">
-                        <div class="item-title">Nutrition Goal</div>
-                        <div class="item-details">1,800 / 2,200 calories consumed</div>
-                        <div id="progressContainer">
-                            <div id="progressBar"></div>
-                        </div>
-                    </div>
+            <!-- Switching Tabs -->
+            <div class="program-tabs">
+                <div class="tabs">
+                    <button class="tab active" data-tab="overview">Overview</button>
+                    <button class="tab" data-tab="workouts">Workouts</button>
+                    <button class="tab" data-tab="nutrition">Nutrition</button>
                 </div>
             </div>
-        </div>
 
-        <!-- Workouts Tab -->
-        <div id="workouts" class="tab-content">
-            <div class="column-flex">
-                <div class="tab-subheading-container row-flex">
-                    <div class="tab-subheading">Recent Workouts</div>
-                    <button class="log-workout-btn">
-                        <i class="fas fa-plus"></i> Log Workout
-                    </button>
-                </div>
-                <div class="workout-item item column-flex">
-                    <div class="row-flex">
-                        <div class="recent-workout-label">Upper Body Strength</div>
-                        <div class="recent-workout-label">45 min</div>
-                    </div>
-                    <div class="row-flex">
-                        <div class="recent-workout-date">December 18, 2024</div>
-                        <div class="view-details">View Details</div>
-                    </div>
-                </div>
-                <div class="workout-item item column-flex">
-                    <div class="row-flex">
-                        <div class="recent-workout-label">Upper Body Strength</div>
-                        <div class="recent-workout-label">45 min</div>
-                    </div>
-                    <div class="row-flex">
-                        <div class="recent-workout-date">December 17, 2024</div>
-                        <div class="view-details">View Details</div>
-                    </div>
-                </div>
-                <div class="workout-item item column-flex">
-                    <div class="row-flex">
-                        <div class="recent-workout-label">Upper Body Strength</div>
-                        <div class="recent-workout-label">45 min</div>
-                    </div>
-                    <div class="row-flex">
-                        <div class="recent-workout-date">December 16, 2024</div>
-                        <div class="view-details">View Details</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Nutrition Tab -->
-        <div id="nutrition" class="tab-content">
-            <div class="column-flex">
-                <div class="tab-subheading">Nutrition Summary</div>
-                <div class="tab-item-container row-flex margin-top ">
-                    <div class="tab-item item">
-                        <div class="item-title">Macronutrients</div>
-                        <div class="nutrition-content row-flex">
-                            <div>Protein</div>
-                            <div>120g / 150g</div>
+            <!-- Overview Tab -->
+            <div id="overview" class="tab-content active">
+                <div class="overview-content">
+                    <div class="tab-item-container row-flex">
+                        <div class="tab-item item column-flex">
+                            <div class="item-title">Today's Workout</div>
+                            <div class="item-details">Upper Body Strength - 45 min</div>
+                            <a href="#" id="workoutBtn" class="btn">Start Workout</a>
                         </div>
-                        <div class="nutritionProgress">
-                            <div id="protein" class="nutritionProgressBar"></div>
-                        </div>
-
-                        <div class="nutrition-content row-flex">
-                            <div>Carbs</div>
-                            <div>200g / 250g</div>
-                        </div>
-                        <div class="nutritionProgress">
-                            <div id="carbs" class="nutritionProgressBar"></div>
-                        </div>
-
-                        <div class="nutrition-content row-flex">
-                            <div>Fat</div>
-                            <div>65g / 80g</div>
-                        </div>
-                        <div class="nutritionProgress">
-                            <div id="fat" class="nutritionProgressBar"></div>
-                        </div>
-                    </div>
-                    <div class="tab-item item column-flex">
-                        <div class="item-title">Water Intake</div>
-                        <div id="water-intake">
-                            <div id="percentage-circle">
-                                <span id="percentage-label">75%</span>
-                            </div>
-                            <div>
-                                <p id="intake-ratio" >1.5 / 2L</p>
-                                <p id="goal">Daily Goal</p>
+                        <div class="tab-item item column-flex">
+                            <div class="item-title">Nutrition Goal</div>
+                            <div class="item-details">1,800 / 2,200 calories consumed</div>
+                            <div id="progressContainer">
+                                <div id="progressBar"></div>
                             </div>
                         </div>
-                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workouts Tab -->
+            <div id="workouts" class="tab-content">
+                <div class="column-flex">
+                    <div class="tab-subheading-container row-flex">
+                        <div class="tab-subheading">Recent Workouts</div>
+                        <button class="log-workout-btn btn">
+                            <i class="fas fa-plus"></i> Log Workout
+                        </button>
+                    </div>
+                    <div class="workout-item item column-flex">
+                        <div class="row-flex">
+                            <div class="recent-workout-label">Upper Body Strength</div>
+                            <div class="recent-workout-label">45 min</div>
+                        </div>
+                        <div class="row-flex">
+                            <div class="recent-workout-date">December 18, 2024</div>
+                            <div class="view-details">View Details</div>
+                        </div>
+                    </div>
+                    <div class="workout-item item column-flex">
+                        <div class="row-flex">
+                            <div class="recent-workout-label">Upper Body Strength</div>
+                            <div class="recent-workout-label">45 min</div>
+                        </div>
+                        <div class="row-flex">
+                            <div class="recent-workout-date">December 17, 2024</div>
+                            <div class="view-details">View Details</div>
+                        </div>
+                    </div>
+                    <div class="workout-item item column-flex">
+                        <div class="row-flex">
+                            <div class="recent-workout-label">Upper Body Strength</div>
+                            <div class="recent-workout-label">45 min</div>
+                        </div>
+                        <div class="row-flex">
+                            <div class="recent-workout-date">December 16, 2024</div>
+                            <div class="view-details">View Details</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nutrition Tab -->
+            <div id="nutrition" class="tab-content">
+                <div class="column-flex">
+                    <div class="tab-subheading">Nutrition Summary</div>
+                    <div class="tab-item-container row-flex margin-top ">
+                        <div class="tab-item item">
+                            <div class="item-title">Macronutrients</div>
+                            <div class="nutrition-content row-flex">
+                                <div>Protein</div>
+                                <div>120g / 150g</div>
+                            </div>
+                            <div class="nutritionProgress">
+                                <div id="protein" class="nutritionProgressBar"></div>
+                            </div>
+
+                            <div class="nutrition-content row-flex">
+                                <div>Carbs</div>
+                                <div>200g / 250g</div>
+                            </div>
+                            <div class="nutritionProgress">
+                                <div id="carbs" class="nutritionProgressBar"></div>
+                            </div>
+
+                            <div class="nutrition-content row-flex">
+                                <div>Fat</div>
+                                <div>65g / 80g</div>
+                            </div>
+                            <div class="nutritionProgress">
+                                <div id="fat" class="nutritionProgressBar"></div>
+                            </div>
+                        </div>
+                        <div class="tab-item item column-flex">
+                            <div class="item-title">Water Intake</div>
+                            <div id="water-intake">
+                                <div id="percentage-circle">
+                                    <span id="percentage-label">75%</span>
+                                </div>
+                                <div>
+                                    <p id="intake-ratio" >1.5 / 2L</p>
+                                    <p id="goal">Daily Goal</p>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,8 +206,8 @@
                     <ul class="footer-links">
                         <li><a href="programs.html">Programs</a></li>
                         <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="community.html">Community</a></li>
                         <li><a href="nutrition-guidance.html">Nutrition Guidance</a></li>
+                        <li><a href="community.html">Community</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

@@ -11,7 +11,7 @@ const recentDiscussions = [
 const recentDiscussionsContainer = document.getElementById('recent-discussions');
 recentDiscussions.forEach((title, index) => {
     const card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'recent-item card';
     card.innerHTML = `
         <h3>${title}</h3>
         <p>Join the conversation and share your thoughts on this popular topic in the fitness community.</p>

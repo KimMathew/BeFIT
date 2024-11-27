@@ -113,7 +113,7 @@
 
 .feature-program-item {
     background-color: rgba(27, 27, 27, 0.85);
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    transition: all 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -132,7 +132,7 @@
     color: var(--color-grey);
 }
 
-#moreBtn {
+.moreBtn {
     text-align: center;
     background-color: var(--color-white);
     padding: 10px 20px;
@@ -141,6 +141,12 @@
     color: var(--color-black);
     font-size: 1rem;
     border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.moreBtn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-white);
 }
 
 .feedback {

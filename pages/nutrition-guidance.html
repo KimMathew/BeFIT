@@ -55,86 +55,88 @@
     </header>
 
     <main>
-        <section class="tab-switch-container container column-flex">
-            <!-- Switching Tabs -->
-            <div class="program-tabs">
-                <div class="tabs">
-                    <button class="tab active" data-tab="overview">Overview</button>
-                    <button class="tab" data-tab="meal-planning">Meal Planning</button>
-                    <button class="tab" data-tab="recipes">Recipes</button>
-                </div>
-            </div>
-
-            <!-- Overview Tab -->
-            <div id="overview" class="tab-content active">
-                <div class="grid-2 grid">
-                    <div id="no-color" class="overview-item item">
-                        <h2>Nutrition Basics</h2>
-                        <p class="item-label">Understanding the fundamentals of nutrition is crucial for achieving your fitness goals. Learn about macronutrients, micronutrients, and how to create a balanced diet.</p>
-                        <a href="#" id="learnBtn" class="btn">Learn More</a>
-                    </div>
-                    <div class="overview-item item add-gap">
-                        <div class="item-title">Quick Nutrition Tips</div>
-                        <span>
-                            <i id="apple" class="fas fa-apple-alt fa-lg"></i> Eat a variety of colorful fruits and vegetables
-                        </span>
-                        <span>
-                            <i id="tint" class="fas fa-tint fa-lg"></i> Stay hydrated throughout the day
-                        </span>
-                        <span>
-                            <i class="fas fa-utensils fa-lg"></i> Practice portion control
-                        </span>
+        <section class="tab-switch">
+            <div class="tab-switch-container container column-flex">
+                <!-- Switching Tabs -->
+                <div class="program-tabs">
+                    <div class="tabs">
+                        <button class="tab active" data-tab="overview">Overview</button>
+                        <button class="tab" data-tab="meal-planning">Meal Planning</button>
+                        <button class="tab" data-tab="recipes">Recipes</button>
                     </div>
                 </div>
-            </div>
 
-            <!-- Meal Planning Tab -->
-            <div id="meal-planning" class="tab-content">
-                <div class="column-flex">
-                    <h2>Meal Planning</h2>
+                <!-- Overview Tab -->
+                <div id="overview" class="tab-content active">
                     <div class="grid-2 grid">
-                        <div class="meal-item item">
-                            <div class="item-title">Beginner Meal Plan</div>
-                            <div class="item-label">A beginner-level meal plan designed to support your fitness goals.</div>
-                            <ul>
-                                <li>Customized macronutrient ratios</li>
-                                <li>3 meals per day</li>
-                                <li>1 snack option</li>
-                                <li>Shopping list included</li>
-                            </ul>
-                            <a href="#" class="mealBtn btn">View Plan</a>
+                        <div id="no-color" class="overview-item item">
+                            <h2>Nutrition Basics</h2>
+                            <p class="item-label">Understanding the fundamentals of nutrition is crucial for achieving your fitness goals. Learn about macronutrients, micronutrients, and how to create a balanced diet.</p>
+                            <a href="#" id="learnBtn" class="btn">Learn More</a>
                         </div>
-                        <div class="meal-item item">
-                            <div class="item-title">Intermediate Meal Plan</div>
-                            <div class="item-label">A intermediate-level meal plan designed to support your fitness goals.</div>
-                            <ul>
-                                <li>Customized macronutrient ratios</li>
-                                <li>4 meals per day</li>
-                                <li>2 snack option</li>
-                                <li>Shopping list included</li>
-                            </ul>
-                            <a href="#" class="mealBtn btn">View Plan</a>
-                        </div>
-                        <div class="meal-item item">
-                            <div class="item-title">Advanced Meal Plan</div>
-                            <div class="item-label">A advanced-level meal plan designed to support your fitness goals.</div>
-                            <ul>
-                                <li>Customized macronutrient ratios</li>
-                                <li>5 meals per day</li>
-                                <li>3 snack option</li>
-                                <li>Shopping list included</li>
-                            </ul>
-                            <a href="#" class="mealBtn btn">View Plan</a>
+                        <div class="overview-item item add-gap">
+                            <div class="item-title">Quick Nutrition Tips</div>
+                            <span>
+                                <i id="apple" class="fas fa-apple-alt fa-lg"></i> Eat a variety of colorful fruits and vegetables
+                            </span>
+                            <span>
+                                <i id="tint" class="fas fa-tint fa-lg"></i> Stay hydrated throughout the day
+                            </span>
+                            <span>
+                                <i class="fas fa-utensils fa-lg"></i> Practice portion control
+                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Recipes Tab -->
-            <div id="recipes" class="tab-content">
-                <div class="column-flex">
-                    <h2>Healthy Recipes</h2>
-                    <div class="grid-3 grid" id="recipe-list"></div>
+                <!-- Meal Planning Tab -->
+                <div id="meal-planning" class="tab-content">
+                    <div class="column-flex">
+                        <h2>Meal Planning</h2>
+                        <div class="grid-2 grid">
+                            <div class="meal-item item">
+                                <div class="item-title">Beginner Meal Plan</div>
+                                <div class="item-label">A beginner-level meal plan designed to support your fitness goals.</div>
+                                <ul>
+                                    <li>Customized macronutrient ratios</li>
+                                    <li>3 meals per day</li>
+                                    <li>1 snack option</li>
+                                    <li>Shopping list included</li>
+                                </ul>
+                                <a href="#" class="mealBtn btn">View Plan</a>
+                            </div>
+                            <div class="meal-item item">
+                                <div class="item-title">Intermediate Meal Plan</div>
+                                <div class="item-label">A intermediate-level meal plan designed to support your fitness goals.</div>
+                                <ul>
+                                    <li>Customized macronutrient ratios</li>
+                                    <li>4 meals per day</li>
+                                    <li>2 snack option</li>
+                                    <li>Shopping list included</li>
+                                </ul>
+                                <a href="#" class="mealBtn btn">View Plan</a>
+                            </div>
+                            <div class="meal-item item">
+                                <div class="item-title">Advanced Meal Plan</div>
+                                <div class="item-label">A advanced-level meal plan designed to support your fitness goals.</div>
+                                <ul>
+                                    <li>Customized macronutrient ratios</li>
+                                    <li>5 meals per day</li>
+                                    <li>3 snack option</li>
+                                    <li>Shopping list included</li>
+                                </ul>
+                                <a href="#" class="mealBtn btn">View Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipes Tab -->
+                <div id="recipes" class="tab-content">
+                    <div class="column-flex">
+                        <h2>Healthy Recipes</h2>
+                        <div class="grid-3 grid" id="recipe-list"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -187,8 +189,8 @@
                     <ul class="footer-links">
                         <li><a href="programs.html">Programs</a></li>
                         <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="community.html">Community</a></li>
                         <li><a href="nutrition-guidance.html">Nutrition Guidance</a></li>
+                        <li><a href="community.html">Community</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

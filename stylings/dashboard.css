@@ -1,5 +1,10 @@
 @import url('root.css');
 
+main {
+    background-image: url('/assets/concrete-wall.png');
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.7);
+}
+
 .dashboard-container {
     padding: 3rem 0;
     display: flex;
@@ -18,7 +23,19 @@
 }
 
 .dashboard-item {
-    flex: 1
+    flex: 1;
+    transition: all 0.3s;
+    
+}
+
+.dashboard-item i {
+    color: var(--color-white);
+}
+
+.dashboard-item:hover {
+    transform: translateY(-10px);
+    color: var(--color-accent);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .column-flex {
@@ -58,6 +75,11 @@
     border-radius: 0.25rem;
     font-size: 1rem;
     font-weight: 500;
+    transition: all 0.5s;
+}
+
+.tab:hover {
+    background-color: #3f3f3f;
 }
 
 .tab-content {
@@ -143,10 +165,6 @@
     line-height: 0; 
 }
 
-.log-workout-btn:hover {
-    background-color: #333; 
-}
-
 .workout-item {
     margin-top: 1rem;
 }
@@ -163,6 +181,11 @@
 .view-details {
     text-decoration: underline;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view-details:hover {
+    color: var(--color-accent);
 }
 
 .margin-top {

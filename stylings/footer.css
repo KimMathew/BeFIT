@@ -41,6 +41,10 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+.footer-links li a:hover {
+    color: var(--color-accent);
+}
+
 .footer-bottom {
     margin-top: 1rem;
     color: var(--color-grey);
