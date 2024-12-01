@@ -61,7 +61,7 @@ header > * {
 }
 
 .tabs {
-    background-color: #2d2d2d;
+    background-color: var(--color-secondary);
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
@@ -83,7 +83,7 @@ header > * {
 }
 
 .tab.active {
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
     color: var(--color-white);
 }
 
@@ -110,7 +110,7 @@ header > * {
 }
 
 .program-card {
-    background-color: #2d2d2d;
+    background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
     height: 100%; 
@@ -132,10 +132,6 @@ header > * {
 
 #item-label {
     color: var(--color-grey);
-}
-
-.program-card {
-    background-color: #2d2d2d;
 }
 
 .program-card img {

@@ -35,6 +35,12 @@
     margin-bottom: 1.5rem;
 }
 
+.hero-title span {
+    color: var(--color-accent); /* Main color */
+}
+
+
+
 @media (min-width: 768px) {
     .hero-title {
         font-size: 4.5rem;
@@ -112,9 +118,10 @@
 /* Feature Programs Section */
 .feature-program {
     padding: 3rem 0;
-    background-image: url('/assets/gym.jpeg');
+    background-image: url('/assets/gym1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center 80%;
 }
 
 @media (max-width: 768px) {

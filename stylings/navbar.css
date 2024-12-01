@@ -51,10 +51,27 @@ nav {
     text-decoration: none;
     font-size: 1rem;
     transition: all 0.2s;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
     color: var(--color-accent);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .nav-right {

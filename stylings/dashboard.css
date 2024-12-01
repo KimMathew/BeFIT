@@ -12,8 +12,13 @@ main {
     gap: 1.5rem;
 }
 
+#container-label span {
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
 .item {
-    background-color: #2d2d2d;
+    background-color: var(--color-secondary);
     border-radius: 1rem;
     padding: 1.5rem;
 }
@@ -57,7 +62,7 @@ main {
 }
 
 .tabs {
-    background-color: #2d2d2d;
+    background-color: var(--color-secondary);
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
@@ -87,7 +92,7 @@ main {
 }
 
 .tab.active {
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
     color: var(--color-white);
 }
 
@@ -144,7 +149,7 @@ main {
     display: inline-flex; 
     align-items: center; 
     gap: 1.5rem; 
-    background-color: #2d2d2d; 
+    background-color: var(--color-secondary); 
     color: #fff; 
     font-size: 1rem; 
     font-weight: 500; 

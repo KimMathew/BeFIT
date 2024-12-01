@@ -3,12 +3,12 @@
 
 :root {
     --color-primary: #1b1b1b;
-    --color-secondary: #2d2d2d;
+    --color-secondary: #2f2f2f;
     --color-white: #fff;
     --color-black: #000;
     --color-muted: #94a3b8;
     --color-grey: #b7b7b7;
-    --color-accent: #58a4b0;
+    --color-accent: #ff7518;
 }
 
 * {
@@ -37,7 +37,7 @@ body {
     font-weight: 600;
 }
 
-.btn {
+.btn, #ctaBtn {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -143,7 +143,7 @@ header p {
 /* CTA */
 .cta {
     padding: 3rem 0;
-    background: linear-gradient(to right, var(--color-accent), #a9bcd0);
+    background: linear-gradient(to right, var(--color-accent), #ffae42);
 }
 
 .cta-container {
@@ -164,6 +164,11 @@ header p {
 #ctaBtn {
     margin-top: 0.5rem;
     text-align: center;
+}
+
+#ctaBtn:hover {
+    background-color: #ffae42; /* Light orange */
+    color: white;
 }
 
 /* Media Queries */

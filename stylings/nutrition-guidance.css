@@ -63,7 +63,7 @@ header > * {
 }
 
 .tabs {
-    background-color: #2d2d2d;
+    background-color: var(--color-secondary);
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
@@ -93,7 +93,7 @@ header > * {
 }
 
 .tab.active {
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
     color: var(--color-white);
 }
 
@@ -112,7 +112,7 @@ header > * {
 }
 
 .overview-item {
-    background-color: #2d2d2d;
+    background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -156,7 +156,7 @@ header > * {
 }
 
 .meal-item {
-    background-color: #2d2d2d;
+    background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -180,7 +180,7 @@ header > * {
 }
 
 .recipe-item {
-    background-color: #2d2d2d;
+    background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -218,7 +218,7 @@ header > * {
 }
 
 .resources {
-    background-color: #2d2d2d;
+    background-color: var(--color-secondary);
 }
 
 .resources-item {
