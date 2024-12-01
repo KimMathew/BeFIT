@@ -51,7 +51,7 @@ header > * {
 }
 
 .program-container {
-    padding: 3rem 0;
+    padding: 3rem 1.5rem;
 }
 
 .program-tabs {
@@ -169,3 +169,8 @@ header > * {
     color: #f39c12;
 }
 
+@media (max-width: 768px) {
+    .tab {
+        font-size: 0.9em;
+    }
+}

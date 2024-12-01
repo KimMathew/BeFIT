@@ -36,6 +36,16 @@ nav {
     gap: 2rem;
 }
 
+/* Hide the menu button by default */
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
 .nav-links a {
     color: var(--color-white);
     text-decoration: none;
@@ -51,30 +61,6 @@ nav {
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-.search-container {
-    position: relative;
-}
-
-.search-input {
-    width: 250px;
-    font-size: 1rem;
-    padding: 0.5rem 1rem 0.5rem 2.5rem;
-    border-radius: 6px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--color-white);
-}
-
-.search-icon {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    left: 0.75rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--color-muted);
 }
 
 .button {
@@ -106,4 +92,47 @@ nav {
 .button-primary:hover {
     color: var(--color-white);
     background-color: var(--color-accent);
+}
+
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 0.9rem;
+    }
+
+    .nav-links a{
+        font-size: 0.9em;
+    }
+
+    .button {
+        font-size: 0.9em;
+    }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links initially */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 72px; /* Below the nav bar */
+        right: 0;
+        background: var(--color-primary);
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        width: 200px;
+        z-index: 100;
+        gap: 1.5rem;
+    }
+
+    .nav-links a{
+        font-size: 1em;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show links when toggled */
+    }
+
+    .menu-button {
+        display: block; /* Show menu button */
+    }
 }
