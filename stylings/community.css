@@ -235,4 +235,20 @@ header > * {
     color: #f39c12;
 }
 
+/* Media Query */
+@media (max-width: 1024px) {
+    .recent-discussion {
+        background-position: center;
+    }
 
+    .hot-topic-item {
+        flex-direction: column;
+    }
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .discussion-meta {
+        flex-direction: column;
+    }
+}
