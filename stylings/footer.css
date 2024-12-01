@@ -51,24 +51,18 @@ footer {
     text-align: center;
 }
 
+/* Media Query */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
+    .footer-section h3 {
+        font-size: 0.95rem;
     }
 
-    .search-container {
-        display: none;
+    .footer-section p, .footer-section a {
+        font-size: 0.8em;
     }
 
-    .hero-container {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-title {
-        font-size: 3rem;
-    }
-
-    .footer-container {
-        grid-template-columns: repeat(2, 1fr);
+    .footer-bottom {
+        margin-top: 0;
+        font-size: 0.9em;
     }
 }
