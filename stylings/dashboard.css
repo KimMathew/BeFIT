@@ -6,7 +6,7 @@ main {
 }
 
 .dashboard-container {
-    padding: 3rem 0;
+    padding: 3rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -16,10 +16,6 @@ main {
     background-color: #2d2d2d;
     border-radius: 1rem;
     padding: 1.5rem;
-}
-
-.row-flex {
-    gap: 20px;
 }
 
 .dashboard-item {
@@ -254,5 +250,43 @@ main {
 
 #goal {
     color: var(--color-grey);
+}
+
+/* Media Query */
+@media (max-width: 1024px) {
+    .info-label {
+        font-size: 0.9em;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-4 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .nutrition-content {
+        font-size: 0.9em;
+    }
+
+    #percentage-circle {
+        height: 6.5rem;
+        margin-right: 0.7rem;
+    }
+
+    #percentage-label {
+        font-size: 1.5em;
+    }
+
+    #intake-ratio {
+        font-size: 1em;
+    }
+
+    #goal {
+        font-size: 0.9em;
+    }
 }
 
