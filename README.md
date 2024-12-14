@@ -17,10 +17,10 @@
 
 4. **Open the Project**  
    - Navigate to the extracted folder.  
-   - Find the `index.html` file.
+   - Find the `main.html` file.
 
 5. **Run the Website**  
-   - Double-click the `index.html` file to open it in your default browser.  
+   - Double-click the `main.html` file to open it in your default browser.  
    - Alternatively, right-click the file, select **Open With**, and choose your preferred browser.
 
 
