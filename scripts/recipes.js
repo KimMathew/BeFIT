@@ -10,12 +10,12 @@ const recipes = [
 
 // Corresponding images for recipes
 const recipeImages = [
-    "/assets/protein-bowl.jpg",
-    "/assets/chicken-stirfry.jpg",
-    "/assets/quinoa-salad.jpg",
-    "/assets/grilled-fish.jpg",
-    "/assets/greek-yogurt.jpg",
-    "/assets/black-bean-burger.jpg",
+    "../assets/protein-bowl.jpg",
+    "../assets/chicken-stirfry.jpg",
+    "../assets/quinoa-salad.jpg",
+    "../assets/grilled-fish.jpg",
+    "../assets/greek-yogurt.jpg",
+    "../assets/black-bean-burger.jpg",
 ];
 
 // Corresponding prep times and calorie values

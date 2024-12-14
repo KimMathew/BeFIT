@@ -2,7 +2,7 @@
 
 header {
     position: relative;
-    background-image: url('/assets/gym-community.jpg');
+    background-image: url('../assets/gym-community.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 45%;
@@ -30,7 +30,7 @@ header > * {
 }
 
 .hot-topic, .community-highlights {
-    background-image: url('/assets/concrete-wall.png');
+    background-image: url('../assets/concrete-wall.png');
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.7);
 }
 
@@ -125,7 +125,7 @@ header > * {
 
 .recent-discussion {
     padding: 3rem 0;
-    background-image: url('/assets/discussions.jpg');
+    background-image: url('../assets/discussions.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -185,7 +185,7 @@ header > * {
 }
 
 #spotlight-pfp {
-    background-image: url('/assets/sarah.jpg');
+    background-image: url('../assets/sarah.jpg');
     background-size: cover;
 }
 
@@ -194,15 +194,15 @@ header > * {
 }
 
 #pfp1 {
-    background-image: url('/assets/pfp1.jpg');
+    background-image: url('../assets/pfp1.jpg');
 }
 
 #pfp2 {
-    background-image: url('/assets/ava.jpg');
+    background-image: url('../assets/ava.jpg');
 }
 
 #pfp3 {
-    background-image: url('/assets/pfp2.jpg');
+    background-image: url('../assets/pfp2.jpg');
 }
 
 .contributor {
